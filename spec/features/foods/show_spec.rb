@@ -11,11 +11,19 @@ RSpec.describe 'Food Search' do
     end
 
     it 'A list of ten foods that contain the ingredients sweet potatoes' do
+      visit('/')
+      fill_in :q, with: 'sweet potatoes'
+      click_button('Search')
 
+      expect(page).to have_content()
     end
 
     it 'For each food, their GTIN code, description, brand owner, and ingredents' do
+      visit('/')
+      fill_in :q, with: 'sweet potatoes'
+      click_button('Search')
 
+      expect(page)
     end
   end
 end

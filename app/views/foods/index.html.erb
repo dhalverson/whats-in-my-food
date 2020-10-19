@@ -1,0 +1,10 @@
+<p>Food Count: <%= @foods[:foods].count %></p>
+
+<ol>
+  <% @foods[:foods][0..9].each do |food| %>
+    <li>GTIN: <%= food[:gtinUpc] %>
+    <p>Description: <%= food[:description] %></p>
+    <p>Brand: <%= food[:brandOwner] %></p>
+    <p>Ingredients: <%= food[:ingredients] %></p></li>
+  <% end %>
+</ol>
