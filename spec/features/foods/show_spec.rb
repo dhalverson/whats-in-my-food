@@ -10,7 +10,7 @@ RSpec.describe 'Food Search' do
       expect(current_path).to eq('/foods')
     end
 
-    it 'A list of ten foods that contain the ingredients sweet potatoes'
+    it 'A list of ten foods that contain the ingredients sweet potatoes' do
 
     end
 
